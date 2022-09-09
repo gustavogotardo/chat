@@ -23,6 +23,19 @@ body {
     color: blueviolet;
 }
 
+.iconBox {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#people {
+    height: 60%;
+    width: 60%;
+}
+
 #pageContent {
     height: 76%;
     width: 100%;
@@ -38,8 +51,24 @@ body {
     display: flex;
 }
 
-.writing {
-    width: 100%;
+#writing {
     height: 100%;
-    
+    width: 75%;
+    border: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    font-weight: 700;
+    padding-left: 20px;
+}
+
+#sendButton {
+    height: 100%;
+    width: 25%;
+    background: #FFFFFF;
+    border: 0px;
+}
+
+button :first-child {
+    width: 60%;
+    height: 60%;
 }
