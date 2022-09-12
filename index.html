@@ -19,7 +19,13 @@
         </div>
     </div>
 
-    <div id="pageContent"></div>
+    <div id="pageContent">
+        <form id="getName">
+            <label for="nickname">What's your nickname?</label>
+            <input type="text" id="nickname" placeholder="Nickname">
+            <input type="submit" value="Next" onclick="getName()">
+        </form>
+    </div>
 
     <div id="writingBox">
         <input type="text" id="writing" placeholder="Write here">
@@ -28,6 +34,7 @@
         </button>
     </div>
     
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="assets/js/scripts.js"></script>
