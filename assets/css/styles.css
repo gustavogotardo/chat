@@ -86,7 +86,38 @@ body {
 #messageList {
     height: 100%;
     width: 100%;
-    
+}
+
+.messages {
+    height: 10%;
+    width: 100%;
+}
+
+.message {
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.time {
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+    color: gray;
+}
+
+.from,
+.to {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: medium;
+}
+
+.status {
+    background-color: lightgray;
+}
+
+.privateMessage {
+    background-color: lightpink;
 }
 
 #writingBox {

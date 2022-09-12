@@ -57,9 +57,9 @@ function sendMessage() {
         "https://mock-api.driven.com.br/api/v4/uol/messages",
         {
             from: nickname,
-            to:,
+            to: to,
             text: message,
-            type:
+            type: type
         }
     );
 }
@@ -67,13 +67,39 @@ function sendMessage() {
 function showMessages() {
     const pageContent = document.getElementById("messageList");
 
-    pageContent.innerHTML += `
-        <li>
-            <spam class="time">${message.time}</spam>
-            <spam class="from">${message.from}</spam>
-            <spam>to</spam>
-            <spam class="to">${message.to}</spam>
-            ${message.text}
-        </li>
-    `;
+    for (let i = 0; i<messages.lenght; i++) {
+        if (messages(i).type === "status") {
+            pageContent.innerHTML += `
+            <li class="messages status">
+                <spam class="time">${message.time}</spam>
+                <spam class="from">${message.from}</spam>
+                <spam>to</spam>
+                <spam class="to">${message.to}</spam>
+                ${message.text}
+            </li>
+            `;
+        }
+        else if (messages(i).to === "private_message") {
+            pageContent.innerHTML += `
+            <li class="messages privateMessage">
+                <spam class="time">${message.time}</spam>
+                <spam class="from">${message.from}</spam>
+                <spam>to</spam>
+                <spam class="to">${message.to}</spam>
+                ${message.text}
+            </li>
+            `;
+        }
+        else {
+            pageContent.innerHTML += `
+            <li class="messages">
+                <spam class="time">${message.time} </spam>
+                <spam class="from">${message.from} </spam>
+                <spam>to </spam>
+                <spam class="to">${message.to} </spam>
+                <spam class="message">${message.text}</spam>
+            </li>
+            `;
+        }
+    }
 }
