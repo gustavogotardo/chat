@@ -28,10 +28,12 @@
 
     function chatRoom(nickname) {
         setTimeout(() => {
-            const online = axios.post('https://mock-api.driven.com.br/api/v4/uol/status',
+            const online = axios.post(
+                "https://mock-api.driven.com.br/api/v4/uol/status",
             {
-                nickname: nickname;
+                nickname: nickname
             });
         }, 5000, nickname);
+
         
     }
