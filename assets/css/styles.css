@@ -83,6 +83,12 @@ body {
     text-align: center;
 }
 
+#messageList {
+    height: 100%;
+    width: 100%;
+    
+}
+
 #writingBox {
     height: 12%;
     width: 100%;
