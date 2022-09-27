@@ -14,9 +14,6 @@
 <body>
     <div id="head">
         <div id="logo">CHATBOX</div>
-        <div class="iconBox">
-            <ion-icon id="people" name="people-outline"></ion-icon>
-        </div>
     </div>
 
     <div id="pageContent">
@@ -27,7 +24,22 @@
         </form>
     </div>
 
+    <div id="sideMenu">
+        <div class="title">Choose who you're messaging:</div>
+        <div id="contacts"></div>
+        <div class="title">Who can see you message?</div>
+        <div id="whoCanSee">
+            <div class="lock"></div>
+            <div class="see"></div>
+            <div class="lock"></div>
+            <div class="see"></div>
+        </div>
+    </div>
+
     <div id="writingBox">
+        <div class="iconBox">
+            <ion-icon id="people" name="people-outline" onclick="openSideMenu()"></ion-icon>
+        </div>
         <input type="text" id="writing" placeholder="Write here">
         <button type="submit" id="sendButton" onclick="sendMessage()">
             <ion-icon name="paper-plane-outline"></ion-icon>

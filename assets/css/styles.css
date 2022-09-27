@@ -4,42 +4,29 @@ body {
 }
 
 #head {
-    height: 12%;
+    height: 8%;
     width: 100%;
     background: #FFFFFF;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
     position: relative;
     top: 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 #logo {
-    padding: 0px 15px;
+    font-size: larger;
     font-family: 'Roboto', sans-serif;
     font-style: italic;
     font-weight: 700;
     color: blueviolet;
 }
 
-.iconBox {
-    height: 100%;
-    width: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#people {
-    height: 60%;
-    width: 60%;
-    color: blueviolet;
-}
-
 #pageContent {
     height: 76%;
     width: 100%;
+    overflow: scroll;
 }
 
 #getName {
@@ -120,6 +107,30 @@ body {
     background-color: lightpink;
 }
 
+#sideMenu {
+    display: none;
+}
+
+.title {
+
+}
+
+#contacts {
+
+}
+
+#whoCanSee {
+
+}
+
+.lock {
+  
+}
+
+.see {
+    
+}
+
 #writingBox {
     height: 12%;
     width: 100%;
@@ -130,9 +141,23 @@ body {
     display: flex;
 }
 
+.iconBox {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#people {
+    height: 60%;
+    width: 60%;
+    color: blueviolet;
+}
+
 #writing {
     height: 100%;
-    width: 75%;
+    width: 70%;
     border: 0px;
     font-family: 'Roboto', sans-serif;
     font-size: large;
@@ -142,7 +167,7 @@ body {
 
 #sendButton {
     height: 100%;
-    width: 25%;
+    width: 15%;
     background: #FFFFFF;
     border: 0px;
     color: blueviolet;

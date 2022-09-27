@@ -44,7 +44,8 @@ function chatRoom(nickname) {
             });
     }, 5000, nickname);
 
-    setInterval(getMessages, 3000);
+    getMessages();
+    //setInterval(getMessages, 3000);
 }
 
 function getMessages() {
@@ -108,4 +109,12 @@ function showMessages(messages) {
             `;
         }
     }
+}
+
+function openSideMenu() {
+
+}
+
+function closeSideMenu() {
+    
 }
